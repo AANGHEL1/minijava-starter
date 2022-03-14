@@ -1,6 +1,3 @@
-# minijava-starter
-Assignment of Compiler Design class
-
 This is the start of a simple compiler which you can modify to compile
 the MiniJava language.  It is meant primarily to show how the
 toolchain works and how the various parts of the compiler project plug
@@ -10,12 +7,12 @@ To demonstrate the basics of scanning and parsing, as well as to
 provide some basic structure, we're providing a "compiler" that will
 scan and parse "programs" in the following tiny programming language:
 
-    program ::= statement | program statement
-    statement ::= assignStmt | displayStmt
-    assignStmt ::= id = expr ;
-    displayStmt ::= display expr ;
-    expr ::= id | expr + expr | ( expr )
-    id ::= [a-zA-Z][a-zA-Z0-9_]*
+	program ::= statement | program statement
+	statement ::= assignStmt | displayStmt
+	assignStmt ::= id = expr ;
+	displayStmt ::= display expr ;
+	expr ::= id | expr + expr | ( expr )
+	id ::= [a-zA-Z][a-zA-Z0-9_]*
 
 (Note: this is only meant for demostrating the tools and the source
 files will need to be modified and some things deleted when they are
@@ -56,5 +53,4 @@ testing, mostly taken from the MiniJava web site.
 The build.xml ant file supports building, running, and testing the
 demo compiler scanning and parsing examples.  Look at it for details
 and use it as a start for your own project's build sequence.
-
 
